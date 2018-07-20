@@ -1,0 +1,6 @@
+---
+applications:
+- name: netcore-examenfinalads-api
+  memory: 256M
+  instances: 1
+  random-route: true
