@@ -6,4 +6,10 @@ namespace Prueba170718.Common{
         public const int maxNumberLogaritmica = 92;
 
     }
+
+    public class StudentType{
+        public const string Pregrado="Pregrado";
+        public const string Maestria="Maestria";
+        public const string Doctorado= "Doctorado";
+    }
 }
