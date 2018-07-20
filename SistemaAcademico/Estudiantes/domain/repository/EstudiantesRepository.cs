@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Common.Infrastructure.Repository;
-using Estudiantes.Domain;
+using Estudiantes.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 

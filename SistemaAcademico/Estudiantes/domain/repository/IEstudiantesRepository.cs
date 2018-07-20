@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Estudiantes.Domain.Entity;
 namespace Estudiantes.Domain.Repository{
     public interface IEstudiantesRepository
     {

@@ -14,6 +14,7 @@ using Fibonacci.Repository.Implementation;
 using Fibonacci.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Common.Infrastructure.Repository;
+using Automapper;
 
 namespace Prueba170718
 {
@@ -28,6 +29,7 @@ namespace Prueba170718
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddAutoMapper(typeof(Startup));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IFibonacciRepository, FibonacciLinealRepository>();
             services.AddDbContext<PracticaExamenContext>(opt => opt.UseInMemoryDatabase("PracticaExamenDB"));

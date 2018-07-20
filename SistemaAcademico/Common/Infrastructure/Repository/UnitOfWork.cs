@@ -4,6 +4,7 @@ namespace Common.Infrastructure.Repository
 {
     using Common.Infrastructure.Repository;
     using Locations.Domain.Repository;
+    using Estudiantes.Domain.Repository;
 
 
     public class UnitOfWork  : IUnitOfWork
@@ -14,10 +15,13 @@ namespace Common.Infrastructure.Repository
         {
             _context = dbContext;
             Locations = new LocationsRepository(_context);
+            Estudiantes = new EstudiantesRepository(_context);
 
         }
 
         public ILocationsRepository Locations  { get; private set; }
+
+        public IEstudiantesRepository Estudiantes { get; private set;}
 
         public int Complete()
         {

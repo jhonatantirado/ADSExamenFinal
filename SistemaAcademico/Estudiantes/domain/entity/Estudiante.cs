@@ -1,7 +1,7 @@
 using Common.Application;
 using Prueba170718.Common;
 
-namespace Estudiantes.Domain{
+namespace Estudiantes.Domain.Entity{
     public abstract class Estudiante
     {
         public long Id { get; set; }
